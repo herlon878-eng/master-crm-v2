@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master CRM - Trello Style</title>
+  <title>Master CRM - Trello Clean</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,26 +14,34 @@
 
 <div class="columns-container">
   <div class="column" data-column="novo" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2>Novo Lead</h2>
-    <button onclick="addCard('novo')">+ Novo Lead</button>
+    <div class="column-header">
+      <h2>Novo Lead</h2>
+      <span class="add-card" onclick="addCard('novo')">+</span>
+    </div>
     <div class="card-list" id="novo"></div>
   </div>
 
   <div class="column" data-column="negociacao" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2>Negociação</h2>
-    <button onclick="addCard('negociacao')">+ Novo Lead</button>
+    <div class="column-header">
+      <h2>Negociação</h2>
+      <span class="add-card" onclick="addCard('negociacao')">+</span>
+    </div>
     <div class="card-list" id="negociacao"></div>
   </div>
 
   <div class="column" data-column="andamento" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2>Negociação em Andamento</h2>
-    <button onclick="addCard('andamento')">+ Novo Lead</button>
+    <div class="column-header">
+      <h2>Negociação em Andamento</h2>
+      <span class="add-card" onclick="addCard('andamento')">+</span>
+    </div>
     <div class="card-list" id="andamento"></div>
   </div>
 
   <div class="column" data-column="fechado" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2>Fechado</h2>
-    <button onclick="addCard('fechado')">+ Novo Lead</button>
+    <div class="column-header">
+      <h2>Fechado</h2>
+      <span class="add-card" onclick="addCard('fechado')">+</span>
+    </div>
     <div class="card-list" id="fechado"></div>
   </div>
 </div>
@@ -41,4 +49,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
