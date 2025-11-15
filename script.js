@@ -19,7 +19,7 @@ function renderCards(){
     div.dataset.id = card.id;
     div.ondragstart = drag;
     div.innerHTML = `
-      <textarea onkeyup="updateCard(${card.id}, this.value)">${card.text}</textarea>
+      <textarea onkeyup="updateCard(${card.id}, this.value)" placeholder="Digite aqui...">${card.text}</textarea>
       <button class="delete-btn" onclick="deleteCard(${card.id})">X</button>
     `;
     document.getElementById(card.column).appendChild(div);
